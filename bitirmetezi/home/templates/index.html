@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="tr">
-  <head>
-  <meta charset="utf-8">
-      <title> bitirme tezleri projesi </title>
-  </head>  
-   <body>
-      <b></b>Django Projesi İndex Önizleme<p></p>
+{% extends "homebase.html" %}
 
+{% block title %} İndex sayfası{% endblock %}
+{% block keywords %} İndex Sayfası anahtar kelimler {% endblock %}
+{% block description %} İndex Sayfası açıklama {% endblock %}
 
+{% block slider %}
+    {% include "slider.html" %}
+{% endblock %}
 
-      
-    </body>
-  
-</html>
+{% block body %}
+    {% include "content.html" %}
+{% endblock %}
